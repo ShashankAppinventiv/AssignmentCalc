@@ -78,13 +78,13 @@ app.post('/power',(req,res)=>{
 //log
 app.get('/log/:a/:b',(req,res)=>{
     let a=Number(req.params.a);
-    res.send(`sqrt of ${a} is ${Math.log(a)}`)
+    res.send(`Log of ${a} is ${Math.log(a)}`)
     res.end()
 })
 
 app.post('/log',(req,res)=>{
     let a=req.body.a
-    res.send(`sqrt of ${a} is ${Math.log(a)}`)
+    res.send(`Log of ${a} is ${Math.log(a)}`)
     res.end()
 })
 
